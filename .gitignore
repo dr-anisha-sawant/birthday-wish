@@ -1,0 +1,10 @@
+.DS_Store
+.vscode/
+.idea/
+*.log
+node_modules/
+Thumbs.db
+# build output for hosting
+dist/
+# uncomment to keep raw/original photos out of the repo
+# assets/photos/originals/

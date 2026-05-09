@@ -1,0 +1,44 @@
+/* =========================================================
+   KEYFRAMES
+   ========================================================= */
+@keyframes heroNameIn {
+  0%   { opacity: 0; transform: scale(0.8); }
+  100% { opacity: 1; transform: scale(1); }
+}
+@keyframes heroCtaIn {
+  0%   { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes ctaPulse {
+  0%, 100% { box-shadow: 0 8px 20px rgba(233, 30, 99, 0.35), 0 0 0 0 rgba(233, 30, 99, 0.4); }
+  50%      { box-shadow: 0 8px 24px rgba(233, 30, 99, 0.5), 0 0 0 14px rgba(233, 30, 99, 0); }
+}
+@keyframes envWiggle {
+  0%, 100% { transform: rotate(-3deg) translateY(0); }
+  50%      { transform: rotate(3deg) translateY(-6px); }
+}
+@keyframes idlePulse {
+  0%, 100% { transform: scale(1); opacity: 0.5; }
+  50%      { transform: scale(1.15); opacity: 0.2; }
+}
+@keyframes waveBar {
+  0%, 100% { height: 20%; }
+  50%      { height: 100%; }
+}
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-8px); }
+  40% { transform: translateX(8px); }
+  60% { transform: translateX(-4px); }
+  80% { transform: translateX(4px); }
+}
+@keyframes heartPulse {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.25); }
+}
+
+/* Balloon float — JS sets transform; this is the fade timing */
+@keyframes balloonFloat {
+  0%   { transform: translateY(0) translateX(0) rotate(0); opacity: 1; }
+  100% { transform: translateY(-110vh) translateX(var(--drift, 30px)) rotate(var(--rot, 10deg)); opacity: 0; }
+}

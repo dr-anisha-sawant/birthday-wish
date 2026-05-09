@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/c/Git/**)",
+      "Read(//c/c/Git/birthday-wish/**)",
+      "Bash(awk 'BEGIN{print \"/* AUTO-GENERATED — do not edit by hand. */\\\\n/* Regenerate: see scripts/generate-photo-list.sh or the README */\\\\nwindow.PHOTO_LIST = [\"} {gsub\\(/\\\\\\\\\\\\\\\\/, \"\\\\\\\\\\\\\\\\\"\\); gsub\\(/'\\\\''/, \"\\\\\\\\'\\\\''\"\\); printf \" \\\\\"assets/photos/%s\\\\\",\\\\n\", $0} END{print \"];\"}')",
+      "Read(//c/js/**)",
+      "Bash(cp -r css dist/)",
+      "Bash(cp -r js dist/)",
+      "Bash(cp -r assets dist/)",
+      "Bash(python scripts/compress-photos.py)"
+    ]
+  }
+}

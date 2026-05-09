@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="blush">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#FCE4EC" />
+  <meta name="description" content="A small personal page." />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>Happy Birthday, Anisha Kathe 💕</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@400;500;600;700&family=Dancing+Script:wght@500;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+  <!-- ========================================================
+       SECTION 0 — PREVIEW TOGGLE BAR (remove or use ?preview=off
+       on the shareable link)
+       ======================================================== -->
+  <div id="preview-bar" role="region" aria-label="Preview mode toggle">
+    <button class="preview-pill active" data-mode="desktop" aria-pressed="true">💻 Desktop</button>
+    <button class="preview-pill" data-mode="mobile" aria-pressed="false">📱 Mobile</button>
+    <span class="preview-note">Preview mode — remove before sharing</span>
+    <button class="preview-hide" id="preview-hide-btn" type="button">Hide</button>
+  </div>
+
+  <div id="phone-frame" aria-hidden="true">
+    <div class="phone-shell">
+      <iframe id="phone-iframe" title="Mobile preview" src="about:blank" loading="lazy"></iframe>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       OPENING ENVELOPE OVERLAY (taps to reveal site)
+       ======================================================== -->
+  <div id="envelope-overlay" role="button" tabindex="0" aria-label="Tap to open">
+    <div class="env-icon">💌</div>
+    <div class="env-hint">tap to open</div>
+  </div>
+
+  <!-- ========================================================
+       BALLOON LAYER (page-wide, pointer-events: none)
+       ======================================================== -->
+  <div id="balloon-layer" aria-hidden="true"></div>
+
+  <!-- ========================================================
+       MAIN CONTENT WRAPPER
+       ======================================================== -->
+  <main id="site-main">
+
+    <!-- ============= SECTION 1 — HERO ============= -->
+    <section id="hero">
+      <div id="hero-strip" class="hero-strip" aria-hidden="true">
+        <div class="hero-strip-track" id="hero-strip-track"></div>
+      </div>
+      <div id="particles" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <h1 class="hero-name">It&rsquo;s your birthday, baby</h1>
+        <p class="hero-subtitle" id="hero-subtitle" aria-live="polite"></p>
+        <button class="hero-cta" id="hero-cta" type="button">Open your gift 🎁</button>
+      </div>
+    </section>
+
+    <!-- ============= SECTION 2 — COUNTDOWN ============= -->
+    <section id="countdown" class="fade-up">
+      <h2 class="section-title">Time, with you</h2>
+      <p class="countdown-tagline" id="countdown-tagline">We've been together…</p>
+      <div class="countdown-tiles" id="countdown-tiles" aria-live="polite">
+        <div class="tile"><span class="tile-num" data-unit="days">0</span><span class="tile-label">Days</span></div>
+        <div class="tile"><span class="tile-num" data-unit="hours">0</span><span class="tile-label">Hours</span></div>
+        <div class="tile"><span class="tile-num" data-unit="minutes">0</span><span class="tile-label">Minutes</span></div>
+        <div class="tile"><span class="tile-num" data-unit="seconds">0</span><span class="tile-label">Seconds</span></div>
+      </div>
+    </section>
+
+    <!-- ============= SECTION 3 — PHOTO GALLERY ============= -->
+    <section id="gallery" class="fade-up">
+      <div class="gallery-strip" aria-hidden="true">
+        <div class="gallery-strip-track" id="gallery-strip-track"></div>
+      </div>
+      <h2 class="section-title section-title--small">Frames of us</h2>
+      <p class="gallery-mode-note" id="gallery-mode-note"></p>
+      <div id="gallery-mount"></div>
+    </section>
+
+    <!-- ============= SECTION 5 — LOVE LETTER ============= -->
+    <section id="letter" class="fade-up">
+      <h2 class="section-title">A letter for you</h2>
+      <div class="envelope" id="letter-envelope" role="button" tabindex="0" aria-label="Tap to open the letter">
+        <div class="envelope-base"></div>
+        <div class="envelope-letter">
+          <div style="font-family: var(--font-script); font-size: 1.4rem; color: var(--text-primary);">For Anisha 💕</div>
+        </div>
+        <div class="envelope-flap"></div>
+        <div class="envelope-seal">💕</div>
+      </div>
+
+      <article class="letter-paper" id="letter-paper" aria-hidden="true">
+Hey Anu,
+
+Wish you a very very happy birthday baby 🥰🥳❤️💋. May Ganpati Bappa give you lots of happiness and joy over the next year 🙇🏻‍♂️🙇🏻‍♂️. May you grow so high in your life.
+
+I know me lamb ahe tujha pasun 🥹🥹 jya mule aapla la khup problems sahan karayala lagtat — but trust me, the wait is worth it to spend a long time ahead 🤭🤭.
+
+I still remember the day when we met in Sia classroom. It's been fucking 8 years 🫨🫨🫨 but jeva pan to day aathavto dola samor, it creates a smile on my face.
+
+Lots and lots of love baby, to you 🌸❤️
+Will come soon to give you a huge birthday gift.
+<span class="signoff">— Yours forever, Utkarsh</span>
+      </article>
+    </section>
+
+    <!-- ============= SECTION 6 — OUR SONG ============= -->
+    <section id="song" class="fade-up">
+      <h2 class="section-title">Our song</h2>
+      <div class="player-card" data-player="song">
+        <p class="player-prelabel">Press play, close your eyes 🎶</p>
+        <button class="play-btn" type="button" aria-label="Play song">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        </button>
+        <div class="waveform" aria-hidden="true">
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </div>
+        <h3 class="player-title">
+          <!-- TODO: SONG TITLE -->Our song
+        </h3>
+        <p class="player-artist">
+          <!-- TODO: SONG ARTIST -->Artist
+        </p>
+        <div class="progress-row">
+          <span class="time-current">0:00</span>
+          <div class="progress" role="slider" tabindex="0" aria-label="Song progress"><div class="progress-fill"></div></div>
+          <span class="time-total">0:00</span>
+        </div>
+        <audio src="assets/audio/song.mp3" preload="metadata"></audio>
+      </div>
+    </section>
+
+    <!-- ============= SECTION 7 — QUIZ ============= -->
+    <section id="quiz" class="fade-up">
+      <h2 class="section-title">How well do we know each other?</h2>
+      <div class="quiz-card" id="quiz-card">
+        <p class="quiz-progress" id="quiz-progress">Question 1 of —</p>
+        <h3 class="quiz-question" id="quiz-question">Loading…</h3>
+        <div class="quiz-options" id="quiz-options"></div>
+        <div class="quiz-final" id="quiz-final">
+          <p>Your score</p>
+          <div class="score" id="quiz-score">0 / 0</div>
+          <p class="msg" id="quiz-msg"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============= SECTION 8 — BALLOONS (overlay, no DOM section) ============= -->
+    <!-- handled entirely by js/balloons.js + #balloon-layer at top of body -->
+
+    <!-- ============= SECTION 9 — VOICE NOTE ============= -->
+    <section id="voice" class="fade-up">
+      <h2 class="section-title">Just for your ears</h2>
+      <div class="player-card voice" data-player="voice">
+        <p class="player-prelabel">A little something I wanted to say out loud 🎙️</p>
+        <button class="play-btn" type="button" aria-label="Play voice note">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        </button>
+        <div class="waveform" aria-hidden="true">
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </div>
+        <h3 class="player-title">A voice note</h3>
+        <p class="player-artist">From me, to you</p>
+        <div class="progress-row">
+          <span class="time-current">0:00</span>
+          <div class="progress" role="slider" tabindex="0" aria-label="Voice note progress"><div class="progress-fill"></div></div>
+          <span class="time-total">0:00</span>
+        </div>
+        <audio src="assets/audio/voice-note.mp3" preload="metadata"></audio>
+      </div>
+    </section>
+
+    <!-- ============= SECTION 11 — CLOSING ============= -->
+    <section id="closing">
+      <p class="closing-line">Yours forever, Utkarsh</p>
+      <span class="pulse-heart" id="closing-heart" role="button" tabindex="0" aria-label="A little secret">💗</span>
+      <p class="credits">Made with love · 2026</p>
+    </section>
+
+  </main>
+
+  <!-- LIGHTBOX (gallery) -->
+  <div id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="lb-close" id="lb-close" type="button" aria-label="Close">×</button>
+    <img id="lb-img" alt="" />
+    <p class="lb-caption" id="lb-caption"></p>
+  </div>
+
+  <!-- ========================================================
+       VENDOR LIBRARIES (CDN)
+       ======================================================== -->
+  <script src="https://cdn.jsdelivr.net/npm/@tsparticles/slim@3/tsparticles.slim.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+  <!-- ========================================================
+       APP SCRIPTS
+       ======================================================== -->
+  <script src="js/preview-toggle.js"></script>
+  <script src="js/particles-config.js"></script>
+  <script src="js/balloons.js"></script>
+  <script src="js/countdown.js"></script>
+  <script src="js/photos-list.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/audio-player.js"></script>
+  <script src="js/quiz.js"></script>
+  <script src="js/easter-egg.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
