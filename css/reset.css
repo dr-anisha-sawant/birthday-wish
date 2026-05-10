@@ -8,6 +8,9 @@ body {
   line-height: 1.6;
 }
 img, picture, video, canvas, svg { display: block; max-width: 100%; }
+/* Strip photos must keep their natural width so the track can be wide enough to scroll */
+.hero-strip-track img,
+.gallery-strip-track img { max-width: none; }
 input, button, textarea, select { font: inherit; color: inherit; }
 button { background: none; border: 0; cursor: pointer; }
 p, h1, h2, h3, h4, h5, h6 { overflow-wrap: break-word; }
